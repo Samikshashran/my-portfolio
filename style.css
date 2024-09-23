@@ -1,48 +1,112 @@
+/* Basic Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
-}
-
-header {
+  }
+  
+  h1, h2 {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  section {
+    padding: 50px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+  }
+  
+  /* Navigation Styling */
+  nav {
     background-color: #333;
     color: white;
     padding: 10px;
-    text-align: center;
-}
-
-nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #nav-list {
+    display: none;
     list-style: none;
     padding: 0;
-}
-
-nav ul li {
+  }
+  
+  #nav-list.active {
+    display: block;
+  }
+  
+  #nav-list li {
     display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
+    margin-right: 10px;
+  }
+  
+  #nav-list li a {
     color: white;
     text-decoration: none;
-}
-
-section {
-    padding: 20px;
-}
-
-h1, h2 {
-    color: #333;
-}
-@media (max-width: 600px) {
-    nav ul {
-        display: block;
-        text-align: center;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-}
+  }
+  
+  #nav-toggle {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  /* Slider Styling */
+  .slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .slide {
+    display: none;
+    width: 100%;
+  }
+  
+  .active-slide {
+    display: block;
+  }
+  
+  /* Contact Form Styling */
+  form input, form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  form button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #form-status {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* Back to Top Button Styling */
+  #back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: none;
+  }
+  
 
